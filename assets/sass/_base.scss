@@ -9,12 +9,11 @@ body {
 }
 
 a {
-  color: $color-link;
+  color: #fff;
   opacity: 1;
-  transition: opacity .1s ease-in;
+  text-decoration: none;
 
   &:hover {
-    opacity: .8;
   }
 }
 

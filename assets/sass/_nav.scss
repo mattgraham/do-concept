@@ -1,15 +1,79 @@
 nav {
   background: rgba(#414141, .98);
   width: 70px;
-  overflow: hidden;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
+  padding: 10px;
+  @include line-height(3.2);
   transition: width .2s ease;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    display: block;
+    @include line-height(6.2);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+    a {
+      white-space: nowrap;
+      color: transparent;
+      transition: color .1s ease-in;
+    }
+  }
 
   &:hover {
     width: 300px;
     z-index: 1000;
+    @include line-height(3.2);
+
+    a {
+      color: #fff;
+    }
+  }
+
+  & :before {
+    color: #fff;
+    display: inline-block;
+    @include font-size(3.2);
+    @include line-height(3.2);
+    width: 50px;
+    text-align: center;
+    font-family: "FontMfizz";
+  }
+
+  .nav-do:before {
+    content: '\f100';
+  } 
+  .nav-create:before {
+    content: '\f100';
+  }
+  .nav-droplet:before {
+    content: '\f100';
+  }
+  .nav-images:before {
+    content: '\f100';
+  }
+  .nav-sshkeys:before {
+    content: '\f100';
+  }
+  .nav-billing:before {
+    content: '\f100';
+  }
+  .nav-support:before {
+    content: '\f100';
+  }
+  .nav-dns:before {
+    content: '\f100';
+  }
+  .nav-api:before {
+    content: '\f100';
   }
 }
