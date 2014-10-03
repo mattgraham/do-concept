@@ -1,0 +1,15 @@
+nav {
+  background: rgba(#414141, .98);
+  width: 70px;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: width .2s ease;
+
+  &:hover {
+    width: 300px;
+    z-index: 1000;
+  }
+}
