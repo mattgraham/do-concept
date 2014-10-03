@@ -5,3 +5,8 @@ h1 {
   letter-spacing: -0.04em;
   margin: 50px 0;
 }
+
+h3 {
+	@include font-size(2.8);
+	font-weight: 400;
+}

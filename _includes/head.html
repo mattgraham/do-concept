@@ -10,7 +10,24 @@
 
     <link rel="stylesheet" href="{{ "/assets/css/main.css" }}">
     <link rel="stylesheet" href="{{ "/assets/css/font-mfizz.css" }}">
+    <script type="text/javascript" src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   </head>
+
+  <script>
+    $(function() {
+      $('.tabs .tab').click(function(){
+        $('.tabs .tab').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+
+    $(function() {
+      $('.applications .app').click(function(){
+        $('.applications .app').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  </script>
   <body>

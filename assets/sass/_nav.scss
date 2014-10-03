@@ -6,6 +6,7 @@ nav {
   top: 0;
   bottom: 0;
   transition: width .2s ease;
+    -webkit-font-smoothing: antialiased;
 
   ul {
     padding: 0;
@@ -56,6 +57,7 @@ nav {
     color: rgba(#fff, .6);
     display: inline-block;
     @include font-size(2.4);
+    @include line-height(4.2);
     width: 50px;
     text-align: center;
     font-family: "FontMfizz";
@@ -65,7 +67,6 @@ nav {
   .nav-create {
     background: #3CC05E;
     border-radius: 2px;
-    margin: 4px 0;
     text-align: center;
 
     &:before {
