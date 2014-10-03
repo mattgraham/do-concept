@@ -1,0 +1,9 @@
+// Matt Graham List of mixins
+
+@mixin font-size($multiplier: 1) {
+  font-size: $font-size*$multiplier;
+}
+
+@mixin line-height($multiplier: 1) {
+  line-height: $line-height*$multiplier;
+}

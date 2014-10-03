@@ -1,0 +1,19 @@
+// Matt Graham List of variables
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$font-size:        10px;
+$line-height:      10px;
+$font-size-small:  $font-size * 0.875;
+
+$spacing-unit:     30px;
+
+$color-text:       #111;
+$color-background: #fdfdfd;
+$color-brand:      #2a7ae2;
+
+$color-link:       red;
+$color-grey:       #828282;
+$color-grey-light: lighten($color-grey, 40%);
+$color-grey-dark:  darken($color-grey, 25%);
+
+$on-laptop:        800px;
