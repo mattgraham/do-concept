@@ -1,0 +1,7 @@
+.help {
+	display: inline-block;
+  @include line-height(5.0);
+  padding: 0px 25px;
+  border-radius: 2px;
+  background: rgba(#fff, .3);
+}

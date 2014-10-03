@@ -1,0 +1,7 @@
+h1 {
+	display: inline-block;
+  font-weight: 300;
+  @include font-size(4.2);
+  letter-spacing: -0.04em;
+  margin: 50px 0;
+}

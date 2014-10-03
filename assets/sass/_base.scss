@@ -1,15 +1,17 @@
 * {
 	-webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  font-family: 'Proxima Nova';
 }
 
 body {
+
   height: 100%;
-  padding: 0 70px;
+  padding: 0 0 0 70px;
 }
 
 a {
-  color: #fff;
+  color: #rgba(#fff, .7);
   opacity: 1;
   text-decoration: none;
 
@@ -20,5 +22,20 @@ a {
 .wrapper {
   width: 100%;
   max-width: 1024px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+.page-heading {
+  margin: 0;
+  color: #fff;
+  padding: 0px 0px;
+  background: #2992CB;
+  width: 100%;
+  overflow: hidden;
+
+  .featured {
+    overflow: hidden;
+    background: rgba(#000, .05);
+  }
 }
