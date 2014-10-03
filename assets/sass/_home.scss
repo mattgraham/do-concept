@@ -51,7 +51,7 @@ input[type="text"] {
 	}
 
 	.tab {
-		font-weight: 400;
+		font-weight: bold;
 		@include line-height(2.4);
 		background: #f7f7f7;
 		color: #666;
@@ -108,18 +108,67 @@ input[type="text"] {
 
 		.icon {
 			display: block;
-			width: 100%;
-			max-width: 120px;
+			width: 120px;
 			height: 120px;
 			margin: 20px auto 40px;
 			border-radius: 100%;
 			background: #F7F7F7;
 			border: 5px solid darken(#F7F7F7, 2%);
 			transition: all .1s ease;
+	    font-family: "FontMfizz";
+			color: #ccc;
+			font-size: 64px;
+
+		  &.redmine:before {
+		  	margin-left: -8px;
+				line-height: 110px;
+		    content: '\f149';
+			}
+			
+			&.wordpress:before {
+				line-height: 125px;
+				content: '\f14a';
+			}
+
+			&.lamp:before {
+				line-height: 120px;
+				content: '\f139'
+			}
+
+			&.lemp:before {
+				line-height: 124px;
+				content: '\f143';
+			}
+
+			&.gitlab:before {
+				line-height: 114px;
+				content: '\f153';
+			}
+
+			&.jenkins:before {
+				line-height: 120px;
+				content: '\f10f';
+			}
+
+			&.nodejs:before {
+				line-height: 115px;
+			  content: '\f14c';
+			}
+			&.ruby:before {
+				line-height: 110px;
+			  content: '\f13b';
+			}
+			&.hubot:before {
+				font-size: 54px;
+				line-height: 105px;
+				font-family: 'octicons';
+			  content: '\f09d';
+			}
 		}
 
 		&:hover {
 			.icon {
+				color: #999;
 				border: 5px solid darken(#F7F7F7, 6%);
 			}
 		}
@@ -130,8 +179,11 @@ input[type="text"] {
 	}
 
 	.app.active {
+		color: #479DE4;
 
 		.icon {
+			font-weight: normal;
+			color: #fff;
 			background: #479DE4;
 			border: 5px solid #4093D9;
 		}
