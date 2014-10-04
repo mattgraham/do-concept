@@ -31,6 +31,7 @@ nav {
     }
 
     a.selected:before {
+      opacity: 1;
       color: #fff;
     }
   }
@@ -38,13 +39,17 @@ nav {
   &:hover {
     width: 220px;
     z-index: 1000;
-    @include line-height(3.2);
 
     a {
       color: rgba(#fff, .7);
+      transition: all .1s ease;
 
       &:hover {
         color: #fff;
+
+        &:before {
+          opacity: 1;
+        }
       }
     }
 
@@ -55,13 +60,14 @@ nav {
 
   & :before {
     color: rgba(#fff, .6);
+    opacity: .4;
     display: inline-block;
     @include font-size(2.4);
-    @include line-height(4.2);
     width: 50px;
     text-align: center;
     font-family: "FontMfizz";
     vertical-align: middle;
+    margin-right: 5px;
   }
   
   .nav-create {
@@ -90,24 +96,52 @@ nav {
   } 
 
   .nav-droplet:before {
-    content: '\f102';
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/nav-drop.svg") no-repeat center center;
   }
   .nav-images:before {
-    content: '\f103';
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/nav-images.svg") no-repeat center center;
   }
   .nav-sshkeys:before {
-    content: '\f104';
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/nav-keys.svg") no-repeat center center;
   }
   .nav-billing:before {
-    content: '\f105';
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/nav-billing.svg") no-repeat center center;
   }
   .nav-support:before {
-    content: '\f106';
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/nav-support.svg") no-repeat center center;
   }
   .nav-dns:before {
-    content: '\f107';
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/nav-dns.svg") no-repeat center center;
   }
   .nav-api:before {
-    content: '\f108';
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("/assets/images/nav-api.svg") no-repeat center center;
   }
 }

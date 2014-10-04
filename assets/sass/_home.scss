@@ -140,9 +140,17 @@ input[type="text"] {
 	  overflow: hidden;
 	  text-overflow: ellipsis;
 
-		&.active > .icon.wordpress:before {
-			color: red !important;
-		}
+	  &.active {
+			.redmine:before 	{ color: red; }
+			.wordpress:before { color: red; }
+			.lamp:before 			{ color: red; }
+			.lemp:before 			{ color: red; }
+			.gitlab:before 		{ color: red; }
+			.jenkins:before 	{ color: red; }
+			.nodejs:before 		{ color: red; }
+			.ruby:before 			{ color: red; }
+			.hubot:before 		{ color: red; }
+	  }
 		
 		.icon {
 			display: block;
@@ -154,8 +162,9 @@ input[type="text"] {
 			border: 5px solid darken(#F7F7F7, 2%);
 			transition: all .1s ease;
 	    font-family: "FontMfizz";
-			color: #ccc;
 			font-size: 64px;
+			cursor: pointer;
+			color: #ccc;
 
 		  &.redmine:before {
 				line-height: 125px;
@@ -169,7 +178,7 @@ input[type="text"] {
 
 			&.lamp:before {
 				line-height: 120px;
-				content: '\f139'
+				content: '\f139';
 			}
 
 			&.lemp:before {
@@ -191,10 +200,12 @@ input[type="text"] {
 				line-height: 115px;
 			  content: '\f14c';
 			}
+
 			&.ruby:before {
 				line-height: 110px;
 			  content: '\f13b';
 			}
+
 			&.hubot:before {
 				font-size: 54px;
 				line-height: 105px;
@@ -204,20 +215,19 @@ input[type="text"] {
 		}
 
 		&:hover {
+
 			.icon {
-				color: #999;
 				border: 5px solid darken(#F7F7F7, 6%);
+				color: #999;
 			}
 		}
 
-		&:nth-child(4n) {
+		&:nth-child(5n) {
 			margin-right: 0px;
 		}
 	}
 
 	.app.active {
-		// color: #479DE4;
-
 		.icon {
 			font-weight: normal;
 			border: 5px solid #4093D9;
@@ -226,17 +236,34 @@ input[type="text"] {
 }
 
 .checkbox {
+	display: inline-block;
 	margin-right: 15px;
 
+	input {
+		display: none;
+
+		&:checked ~ label:before {
+			content: "\f03a";
+		}
+	}
+
+	label {
+		cursor: pointer;
+
 		&:before {
-			content: '';
+			content: "";
+			font-family: 'octicons';
+			@include font-size(2.2);
+			@include line-height(2.4);
+			color: $color-brand;
 			display: inline-block;
 			width: 24px;
 			height: 24px;
 			background: #EEE;
 			border-radius: 2px;
 			margin-right: 14px;
-			line-height: 30px;
 			vertical-align: middle;
+			text-align: center;
 		}
+	}
 }
