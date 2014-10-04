@@ -1,0 +1,115 @@
+//  These styles were hacked, swiped and added for the demo drom the digitalocean.com site
+
+.mt55 {
+	line-height: 140%;
+	
+	h3 span {
+		font-size: 16px;
+	}
+
+	.size {
+		border-radius: 3px;
+		display: inline;
+		float: left;
+		background-color: #fff;
+		color: #666;
+		cursor: pointer;
+		text-align: center;
+		width: 146px;
+		border: 2px solid #f1f1f1;
+		margin-right: 20px;
+		margin-bottom: 20px;
+
+		&:nth-child(6) {
+			margin-right: 0;
+		}
+
+		&.selected {
+			border: 2px solid #479de4;
+			position: relative;
+
+			.pricing {
+				background-color: #479de4;
+				border-bottom: 2px solid #479de4;
+				color: #fff;
+			}
+		
+			&:after {
+				content: 'We Recomend';
+				color: #479de4;
+				position: absolute;
+				bottom: -12px;
+				left: 10px;
+				right: 10px;
+				background: #fff;
+				font-size: 12px;
+				font-weight: bold;
+				text-transform: uppercase;
+				padding: 1px 0;
+				vertical-align: middle;
+				border: 2px solid #479de4;			
+			}
+		}
+	}
+
+	.pricing {
+		display: block;
+		border-bottom: 2px solid #f1f1f1;
+		padding: 20px 0 11px;
+
+		.monthly {
+			display: block;
+			text-transform: lowercase;
+
+			.dollar {
+				display: inline-block;
+				font-size: 16px;
+				line-height: 10px;
+				vertical-align: top;
+				position: relative;
+				left: 2px;
+			}
+			
+			.cost {
+				font-size: 32px;
+				font-weight: 600;	
+			}
+
+			.period {
+				font-size: 16px;
+				position: relative;
+				right: 3px;
+			}
+
+		}
+
+		.hourly {
+			font-size:14px;
+
+			.cost {
+				display: inline-block;
+			}
+		}
+	}
+
+	.details {
+		padding: 15px 0;
+		font-size: 14px;
+		
+		strong {
+			font-weight: 600;
+			color: #666;
+		}
+		
+		span {
+			display: block;
+			margin: 3px 0;
+			color: #999999;
+		}
+	}
+
+	input[type='radio'] {
+		display: none;
+	}
+
+}

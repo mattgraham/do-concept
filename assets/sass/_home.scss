@@ -189,3 +189,19 @@ input[type="text"] {
 		}
 	}
 }
+
+.checkbox {
+	margin-right: 15px;
+	
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background: #EEE;
+			border-radius: 2px;
+			margin-right: 14px;
+			line-height: 30px;
+			vertical-align: middle;
+		}
+}
