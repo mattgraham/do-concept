@@ -1,24 +1,25 @@
 // Matt Graham List of variables
 
-$base-font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
-$font-size:        10px;
-$line-height:      10px;
-$font-size-small:  $font-size * 0.875;
+$base-font-family: 	"Proxima Nova", Helvetica, Arial, sans-serif;
+$font-size:        	10px;
+$line-height:      	10px;
+$font-size-small:  	$font-size * 0.875;
 
-$border-radius:	   3px;
+$border-radius:	   	3px;
 
-$spacing-unit:     30px;
+$spacing-unit:     	30px;
 
-$color-text:       #666;
-$color-background: #fdfdfd;
-$color-brand:      #479DE4;
+$color-text:       	#666;
+$color-background: 	#fdfdfd;
+$color-brand:      	#479DE4;
+$color-brand-green:	#3CC05E;
 
-$color-link:       red;
-$color-grey:       #666;
-$color-grey-light: lighten($color-grey, 40%);
-$color-grey-dark:  darken($color-grey, 25%);
+$color-link:       	#479DE4;
+$color-grey:       	#666;
+$color-grey-light: 	lighten($color-grey, 40%);
+$color-grey-dark:  	darken($color-grey, 25%);
 
-$font-weight-light: 300;
-$font-weight-normal: 400;
+$font-weight-light: 	300;
+$font-weight-normal: 	400;
 $font-weight-semi-bold: 600;
-$font-weight-bold: 700;
+$font-weight-bold: 		700;

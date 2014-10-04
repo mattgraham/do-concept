@@ -1,0 +1,86 @@
+//  These styles were hacked, swiped and added for the demo drom the digitalocean.com site
+
+#region, .regions {
+	display: inline-block;
+	width: 100%;
+	
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+}
+
+.region-geography {
+	border-radius: 3px;
+	background-color: #fff;
+	color: #666;
+	cursor: pointer;
+	float: left;
+	margin: 0 10px 10px 10px;
+	text-align: center;
+	width: 138px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 2px solid #f1f1f1;
+	
+	&:first-child {
+		margin-left: 0;
+	}
+	
+	&.selected.regions {
+			border-top: solid 2px transparent;
+
+		.selected-region {
+			font-weight: bold;
+			color: $color-brand;
+		}
+	}
+
+	.region-geography-info {
+		padding: 20px 0 10px 0;
+
+		.icon {
+			font: 0/0 a;
+			display: inline-block;
+			width: 100%;
+			text-shadow: none;
+			background-color: transparent;
+			border: 0;
+			height: 28px;
+
+			img {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	.regions {
+		list-style: none;
+		padding: 0;
+		color: #969696;
+		border-top: 2px solid #f1f1f1;
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		padding: 10px 0;
+	
+		.region {
+			display: table-cell;
+			text-align: center;
+			border-right: 1px solid #f1f1f1;
+			box-sizing: border-box;
+			padding: 10px 0;
+			background: #fff;
+
+			&:last-child {
+				border-right: 0;
+			}
+		}
+
+		.disabled {
+			color: #efefef;
+		}
+	}
+}

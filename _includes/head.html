@@ -31,5 +31,26 @@
         $(this).addClass('active');
       });
     });
+
+    $(function() {
+      $('.size').click(function(){
+        $('.size').removeClass('selected');
+        $(this).addClass('selected');
+      });
+    });
+    
+    $(function() {
+      $('.region-geography').click(function(){
+        $('.region-geography').removeClass('selected');
+        $(this).addClass('selected');
+      });
+    });
+
+    $(function() {
+      $('.meter').click(function(){
+        $('.meter').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
   </script>
   <body>

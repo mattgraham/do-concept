@@ -1,119 +1,80 @@
   <section>
-    <h3>Select Region</h3>
+    <h3>Select Region<span>(ie what area serves your target market best.)</span></h3>
 
     <div id='region'>
       <ul id='regions'>
         <li class='region-geography selected' id='region-nyc'>
           <div class='region-geography-info'>
-            <span class='icon'></span> <span class='name'>New York</span>
+            <span class='icon'><img src="http://cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/regions/new-york-1-941cd85baaab96c1a0019cbba18c4dea.png" alt=""></span>
+            <span class='name'>New York</span>
           </div>
 
           <ul class='regions'>
-            <li class='region selected-region' data-available-settings=
-            '["virtio", "private_networking", "backups", "ipv6", "metadata"]'
-            data-available-size-names=
-            '["512MB", "1GB", "2GB", "4GB", "8GB", "16GB", "32GB", "48GB", "64GB"]'
-            data-available-sizes='[66, 63, 62, 64, 65, 61, 60, 70, 69]'
-            data-id='8' data-image-upgrade='true' id='region-8'>3
-            <input checked="checked" id="region_8" name=
-            "droplet_create[region_id]" type="radio" value="8"></li>
-
-            <li class='region' data-available-settings=
-            '["virtio", "private_networking", "backups"]'
-            data-available-size-names=
-            '["512MB", "1GB", "2GB", "4GB", "8GB", "16GB", "32GB", "48GB", "64GB"]'
-            data-available-sizes='[63, 62, 64, 65, 60, 69, 66, 70, 61]'
-            data-id='4' data-image-upgrade='false' id='region-4'>2 <input id=
-            "region_4" name="droplet_create[region_id]" type="radio" value=
-            "4"></li>
-
-            <li class='disabled region' data-toggle='tooltip' id='region-1'
-            title=
-            'Due to high demand and capacity restrictions we have temporarily disabled droplet creation in this region.'>
-            <span class='name'>1</span></li>
+            <li class='region selected-region'>3</li>
+            <li class='region'>2</li>
+            <li class='disabled region'>1</span></li>
           </ul>
         </li>
 
         <li class='region-geography' id='region-ams'>
           <div class='region-geography-info'>
-            <span class='icon'></span> <span class='name'>Amsterdam</span>
+            <span class='icon'><img src="http://cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/regions/amsterdam-1-ad89380b621e2c7ca5e62748af5c8866.png" alt=""></span>
+            <span class='name'>Amsterdam</span>
           </div>
 
           <ul class='regions'>
-            <li class='region' data-available-settings=
-            '["virtio", "private_networking", "backups", "ipv6", "metadata"]'
-            data-available-size-names=
-            '["512MB", "1GB", "2GB", "4GB", "8GB", "16GB", "32GB", "48GB", "64GB"]'
-            data-available-sizes='[66, 63, 62, 64, 65, 61, 60, 70, 69]'
-            data-id='9' data-image-upgrade='true' id='region-9'>3 <input id=
-            "region_9" name="droplet_create[region_id]" type="radio" value=
-            "9"></li>
-
-            <li class='region' data-available-settings=
-            '["virtio", "private_networking", "backups", "metadata"]'
-            data-available-size-names=
-            '["512MB", "1GB", "2GB", "4GB", "8GB", "16GB", "32GB", "48GB", "64GB"]'
-            data-available-sizes='[66, 62, 64, 65, 60, 70, 61, 69, 63]'
-            data-id='5' data-image-upgrade='true' id='region-5'>2 <input id=
-            "region_5" name="droplet_create[region_id]" type="radio" value=
-            "5"></li>
-
-            <li class='disabled region' data-toggle='tooltip' id='region-2'
-            title=
-            'Due to high demand and capacity restrictions we have temporarily disabled droplet creation in this region.'>
-            <span class='name'>1</span></li>
+            <li class='region'>3</li>
+            <li class='region'>2</li>
+            <li class='disabled region'>1</span></li>
           </ul>
         </li>
 
         <li class='region-geography' id='region-sfo'>
           <div class='region-geography-info'>
-            <span class='icon'></span> <span class='name'>San Francisco</span>
+            <span class='icon'><img src="http://cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/regions/san-francisco-1-220205bdeaf2e48c0bd3f22e65bcc0fd.png" alt=""></span>
+            <span class='name'>San Francisco</span>
           </div>
 
           <ul class='regions'>
-            <li class='region' data-available-settings=
-            '["virtio", "backups", "metadata"]' data-available-size-names=
-            '["512MB", "1GB", "2GB", "4GB", "8GB", "16GB", "32GB", "48GB", "64GB"]'
-            data-available-sizes='[62, 64, 65, 63, 61, 60, 70, 66, 69]'
-            data-id='3' data-image-upgrade='true' id='region-3'>1 <input id=
-            "region_3" name="droplet_create[region_id]" type="radio" value=
-            "3"></li>
+            <li class='region'>1</li>
           </ul>
         </li>
 
         <li class='region-geography' id='region-sgp'>
           <div class='region-geography-info'>
-            <span class='icon'></span> <span class='name'>Singapore</span>
+            <span class='icon'><img src="http://cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/regions/singapore-1-ff91bf3e3a8668f0da49c40506009df2.png" alt=""></span>
+            <span class='name'>Singapore</span>
           </div>
 
           <ul class='regions'>
-            <li class='region' data-available-settings=
-            '["virtio", "private_networking", "backups", "ipv6", "metadata"]'
-            data-available-size-names=
-            '["512MB", "1GB", "2GB", "4GB", "8GB", "16GB", "32GB", "48GB", "64GB"]'
-            data-available-sizes='[63, 66, 62, 64, 65, 61, 60, 70, 69]'
-            data-id='6' data-image-upgrade='true' id='region-6'>1 <input id=
-            "region_6" name="droplet_create[region_id]" type="radio" value=
-            "6"></li>
+            <li class='region'>1</li>
           </ul>
         </li>
 
         <li class='region-geography' id='region-lon'>
           <div class='region-geography-info'>
-            <span class='icon'></span> <span class='name'>London</span>
+            <span class='icon'><img src="http://cloud-cdn-digitalocean-com.global.ssl.fastly.net/assets/regions/london-1-a3c43b344159c198068296692524b5e6.png" alt=""></span>
+            <span class='name'>London</span>
           </div>
 
           <ul class='regions'>
-            <li class='region' data-available-settings=
-            '["virtio", "private_networking", "backups", "ipv6", "metadata"]'
-            data-available-size-names=
-            '["512MB", "1GB", "2GB", "4GB", "8GB", "16GB", "32GB", "48GB", "64GB"]'
-            data-available-sizes='[66, 63, 62, 64, 65, 60, 70, 69, 61]'
-            data-id='7' data-image-upgrade='true' id='region-7'>1 <input id=
-            "region_7" name="droplet_create[region_id]" type="radio" value=
-            "7"></li>
+            <li class='region'>1</li>
           </ul>
         </li>
       </ul>
+    </div>
+
+    <h4>Available Regional Settings</h4>
+    <div class="checkbox">
+      <input type="checkbox" name="pn" id="pn">
+      <label for="pn">Private Networking</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="ipv6" id="ipv6">
+      <label for="ipv6">IPv6</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="eb" id="eb">
+      <label for="eb">Enable Backups</label>
     </div>
   </section>

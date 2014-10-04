@@ -1,0 +1,59 @@
+.traffic {
+	display: inline-block;
+
+	ul {
+		padding: 0;
+	}	
+
+	.meter {
+		border-radius: 3px;
+		display: inline;
+		float: left;
+		background-color: #fff;
+		color: #666;
+		cursor: pointer;
+		text-align: center;
+		width: 20%;
+		border: 2px solid #f1f1f1;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		position: relative;
+		transition: all .05s ease-in;
+
+		&.active {
+			border: 2px solid $color-brand;
+
+			.title {
+				background: $color-brand;
+				color: #fff;
+			}
+
+			.info {
+				color: $color-brand;
+				border-top: 2px solid transparent;
+			}
+		}
+
+		.title {
+			padding: 34px 0 30px;
+			@include font-size(1.8);
+			@include line-height(2.0);
+		}
+		
+		.info {
+			list-style: none;
+			font-weight: bold;
+			color: $color-grey;
+			border-top: 2px solid #f1f1f1;
+			display: inline-block;
+			width: 100%;
+			@include font-size(1.4);
+			@include line-height(1.4);
+			padding: 10px 0;
+		}
+	}
+
+	p {
+		display: inline-block;
+	}
+}

@@ -2,10 +2,6 @@
 
 .mt55 {
 	line-height: 140%;
-	
-	h3 span {
-		font-size: 16px;
-	}
 
 	.size {
 		border-radius: 3px;
@@ -19,6 +15,12 @@
 		border: 2px solid #f1f1f1;
 		margin-right: 20px;
 		margin-bottom: 20px;
+		position: relative;
+		transition: all .05s ease-in;
+
+		&:hover {
+			border: 2px solid darken(#f1f1f1, 4%);
+		}
 
 		&:nth-child(6) {
 			margin-right: 0;
@@ -33,23 +35,23 @@
 				border-bottom: 2px solid #479de4;
 				color: #fff;
 			}
-		
-			&:after {
-				content: 'We Recomend';
-				color: #479de4;
-				position: absolute;
-				bottom: -12px;
-				left: 10px;
-				right: 10px;
-				background: #fff;
-				font-size: 12px;
-				font-weight: bold;
-				text-transform: uppercase;
-				padding: 1px 0;
-				vertical-align: middle;
-				border: 2px solid #479de4;			
-			}
 		}
+	}
+
+	.recomended:after {
+		content: 'Recomend Size';
+		color: #479de4;
+		position: absolute;
+		bottom: -12px;
+		left: 10px;
+		right: 10px;
+		background: #fff;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 0;
+		vertical-align: middle;
+		border-radius: 3px;
+		border: 2px solid #479de4;			
 	}
 
 	.pricing {

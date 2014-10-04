@@ -28,18 +28,27 @@ layout: default
   <div class="page-content">
     <div class="wrapper">
 
-			<section class="droplet-name">
-				<h3>Name your droplet</h3>
-				<input type="text">
-				<span class="meta">Need help? How about the name <a href="#">“area51-backup”</a></span>
-			</section>
+		<section class="droplet-name">
+			<h3>Name your droplet</h3>
+			<input type="text">
+			<span class="meta">Need help? How about the name <a href="#">“area51-backup”</a></span>
+		</section>
 
 		{% include build.html %}
 
 		{% include region.html %}
 
+		{% include traffic.html %}
+
 		{% include size.html %}
 
+		<div class="create">
+			<p>Your droplet settings and ‘root’ password will be emailed to you after creation.</p>
+
+			<span class="button">Create Droplet</span>
+
+			<a href="#">Download Droplet file for DigitalOcean Command Kit</a>
+		</div>
     </div>
   </div>
 

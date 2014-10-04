@@ -7,6 +7,14 @@ h1 {
 }
 
 h3 {
+	color: #222;
 	@include font-size(2.8);
 	font-weight: 400;
+}
+
+h4 {
+	color: #444;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 20px 0;
 }

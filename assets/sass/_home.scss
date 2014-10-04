@@ -1,6 +1,11 @@
 h3 {
-	color: $color-grey;
-	font-weight: $font-weight-light;
+	color: #444;
+	font-weight: $font-weight-normal;
+
+	span {
+		margin-left: 5px;
+		font-size: 16px;
+	}
 }
 
 .title {
@@ -46,7 +51,7 @@ h3 {
 }
 
 section {
-	margin: 60px 0;
+	margin: 60px 0 0;
 }
 
 input[type="text"] {
@@ -141,15 +146,15 @@ input[type="text"] {
 	  text-overflow: ellipsis;
 
 	  &.active {
-			.redmine:before 	{ color: red; }
-			.wordpress:before { color: red; }
-			.lamp:before 			{ color: red; }
-			.lemp:before 			{ color: red; }
-			.gitlab:before 		{ color: red; }
-			.jenkins:before 	{ color: red; }
-			.nodejs:before 		{ color: red; }
-			.ruby:before 			{ color: red; }
-			.hubot:before 		{ color: red; }
+			.redmine:before 	{ color: #911; }
+			.wordpress:before { color: #34495e; }
+			.lamp:before 			{ color: #e74c3c; }
+			.lemp:before 			{ color: #16a085; }
+			.gitlab:before 		{ color: #34495e; }
+			.jenkins:before 	{ color: #f39c12; }
+			.nodejs:before 		{ color: #2ecc71; }
+			.ruby:before 			{ color: #c0392b; }
+			.hubot:before 		{ color: #222; }
 	  }
 		
 		.icon {
@@ -167,8 +172,8 @@ input[type="text"] {
 			color: #ccc;
 
 		  &.redmine:before {
-				line-height: 125px;
-				content: '\f14a';
+				line-height: 115px;
+				content: '\f106';
 			}
 		
 			&.wordpress:before {
@@ -192,7 +197,7 @@ input[type="text"] {
 			}
 
 			&.jenkins:before {
-				line-height: 120px;
+				line-height: 125px;
 				content: '\f10f';
 			}
 
@@ -264,6 +269,30 @@ input[type="text"] {
 			margin-right: 14px;
 			vertical-align: middle;
 			text-align: center;
+		}
+	}
+}
+
+.create {
+	padding: 40px 0;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 40px;
+	text-align: center;
+	
+	.button {
+		@include font-size(2.4);
+		display: inline-block;
+		background: $color-brand-green;
+		padding: 25px;
+		margin: 20px 0;
+		width: 100%;
+		color: #fff;
+		border-radius: 3px;
+		transition: background .1s ease-in;
+
+		&:hover {
+			background: darken($color-brand-green, 10%);
 		}
 	}
 }

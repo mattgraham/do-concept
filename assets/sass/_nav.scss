@@ -6,7 +6,6 @@ nav {
   top: 0;
   bottom: 0;
   transition: width .2s ease;
-    -webkit-font-smoothing: antialiased;
 
   ul {
     padding: 0;
@@ -27,7 +26,6 @@ nav {
       width: 100%;
       white-space: nowrap;
       color: transparent;
-      transition: color .1s ease-in;
     }
 
     a.selected:before {
@@ -42,9 +40,10 @@ nav {
 
     a {
       color: rgba(#fff, .7);
-      transition: all .1s ease;
+      transition: all .1s ease-in;
 
       &:hover {
+        opacity: 1;
         color: #fff;
 
         &:before {
@@ -71,18 +70,19 @@ nav {
   }
   
   .nav-create {
-    background: #3CC05E;
+    background: $color-brand-green;
     border-radius: 2px;
     text-align: center;
+    font-weight: bold;
 
     &:before {
       margin-top: -1px;
       content: '+';
+      opacity: 1;
+      color: #fff;
       @include line-height(3.6);
-      font-weight: bold;
     }
   }
-
 
   .nav-do {
     font-size: 0;
