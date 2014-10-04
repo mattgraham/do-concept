@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Proxima Nova';
+  font-family: $base-font-family;
 }
 
 body {
@@ -33,9 +33,4 @@ a {
   background: #2992CB;
   width: 100%;
   overflow: hidden;
-
-  .featured {
-    overflow: hidden;
-    background: rgba(#000, .05);
-  }
 }

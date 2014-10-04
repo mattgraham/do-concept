@@ -1,6 +1,6 @@
 // Matt Graham List of variables
 
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
 $font-size:        10px;
 $line-height:      10px;
 $font-size-small:  $font-size * 0.875;
@@ -18,4 +18,7 @@ $color-grey:       #828282;
 $color-grey-light: lighten($color-grey, 40%);
 $color-grey-dark:  darken($color-grey, 25%);
 
-$on-laptop:        800px;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
