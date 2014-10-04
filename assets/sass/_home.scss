@@ -1,14 +1,48 @@
 h3 {
-	color: #666;
-	font-weight: 100;
+	color: $color-grey;
+	font-weight: $font-weight-light;
 }
 
-.help {
+.title {
 	display: inline-block;
-  @include line-height(5.0);
-  padding: 0px 25px;
-  border-radius: 2px;
-  background: rgba(#fff, .3);
+	padding: 40px 0;
+	overflow: hidden;
+	vertical-align: center;
+	width: 100%;
+
+	h1 {
+		@include line-height(6.2);
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	  vertical-align: middle;
+	  float: left;
+	}
+}
+
+.help-box {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	@include line-height(6.0);
+	text-align: center;
+  border-radius: 3px;
+  background: rgba(#fff, .2);
+  vertical-align: middle;
+ 	float: right;
+	transition: background .1s ease;
+
+  &:before {
+  	font-weight: normal;
+  	@include font-size(1.6);
+  	font-family: 'octicons';
+  	content: '\f02c';
+  	font-weight: $font-weight-bold;
+  }
+
+  &:hover {
+  	background: rgba(#fff, .6);
+  }
 }
 
 section {
@@ -106,6 +140,10 @@ input[type="text"] {
 	  overflow: hidden;
 	  text-overflow: ellipsis;
 
+		&.active > .icon.wordpress:before {
+			color: red !important;
+		}
+		
 		.icon {
 			display: block;
 			width: 120px;
@@ -120,11 +158,10 @@ input[type="text"] {
 			font-size: 64px;
 
 		  &.redmine:before {
-		  	margin-left: -8px;
-				line-height: 110px;
-		    content: '\f149';
+				line-height: 125px;
+				content: '\f14a';
 			}
-			
+		
 			&.wordpress:before {
 				line-height: 125px;
 				content: '\f14a';
@@ -179,12 +216,10 @@ input[type="text"] {
 	}
 
 	.app.active {
-		color: #479DE4;
+		// color: #479DE4;
 
 		.icon {
 			font-weight: normal;
-			color: #fff;
-			background: #479DE4;
 			border: 5px solid #4093D9;
 		}
 	}
@@ -192,7 +227,7 @@ input[type="text"] {
 
 .checkbox {
 	margin-right: 15px;
-	
+
 		&:before {
 			content: '';
 			display: inline-block;

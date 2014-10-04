@@ -36,7 +36,7 @@ nav {
   }
 
   &:hover {
-    width: 240px;
+    width: 220px;
     z-index: 1000;
     @include line-height(3.2);
 
@@ -70,14 +70,23 @@ nav {
     text-align: center;
 
     &:before {
+      margin-top: -1px;
       content: '+';
+      @include line-height(3.6);
       font-weight: bold;
     }
   }
 
 
-  .nav-do:before {
-    content: '\f100';
+  .nav-do {
+    font-size: 0;
+    display: inline-block;
+    width: 100%;
+    background: url("/assets/images/logo-digitalocean.svg") no-repeat left center;
+    background-size: auto 27px;
+    margin: 8px auto;
+    width: 392px;
+    height: 30px;
   } 
 
   .nav-droplet:before {

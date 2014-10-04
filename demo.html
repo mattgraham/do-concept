@@ -18,8 +18,10 @@ layout: default
 	</div>
 
 	<div class="wrapper">
-		<h1>Create Droplet</h1>
-		<span class="help">?</span>
+		<span class="title">
+			<h1>Create Droplet</h1>
+			<div class="help-box"></div>
+		</span>	
 	</div>	
 </div>
 
@@ -33,6 +35,8 @@ layout: default
 			</section>
 
 		{% include build.html %}
+
+		{% include region.html %}
 
 		{% include size.html %}
 
