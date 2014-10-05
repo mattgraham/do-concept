@@ -21,6 +21,28 @@ a {
   }
 }
 
+.title {
+  display: inline-block;
+  padding: 40px 0;
+  overflow: hidden;
+  vertical-align: center;
+  width: 100%;
+
+  h1 {
+    @include line-height(6.2);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    float: left;
+  }
+}
+
+p {
+  @include font-size(1.6);
+  @include line-height(2.4);
+}
+
 .wrapper {
   width: 100%;
   max-width: 1024px;

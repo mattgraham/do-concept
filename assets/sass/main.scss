@@ -3,15 +3,15 @@
 // Structural Beginings
 @import "compass/css3";
 @import "variables";
-@import "base";
 @import "normalize";
 @import "mixins";
 @import "syntax-highlighting";
+@import "base";
 
 // Modular Styles
-@import "fonts";
 @import "command-kit";
-@import "header";
+@import "demo";
+@import "fonts";
 @import "home";
 @import "nav";
 @import "region";

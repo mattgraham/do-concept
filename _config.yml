@@ -9,5 +9,8 @@ github_username:  mattgraham
 # Build settings
 markdown: kramdown
 
+kramdown:
+	input: GFM
+
 sass:
   sass_dir: /assets/_sass
