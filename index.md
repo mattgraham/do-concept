@@ -93,6 +93,8 @@ So that you can visually see some of the updates and code I've posted the app (o
 - Navigation icons are all svgs, the icons for the apps are a typeface. This is something that could be turned into one font for the entire site depending on the size differences of the assets.
 - The tabs 'change' but do not change. My goal was to show the module, and a concept for the searching through the pre-built applications with their add on options.
 
-Without further delay: [live demo](http://104.131.123.98/demo.html)
+Without further delay:
+
+<a href="/demo.html" class="button">View Demo</a>
 
 I have also invited your github account to the repo. The site is built initally in Jekyll and can be run locally with a few terminal commands.

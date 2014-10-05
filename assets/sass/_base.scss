@@ -7,7 +7,7 @@
 body {
   color: $color-text;
   height: 100%;
-  padding: 0 0 0 70px;
+  padding: 0;
 }
 
 a {
@@ -71,10 +71,13 @@ p {
   margin: 0 auto;
 }
 
+.site-header ~ * {
+  padding-left: 70px;
+}
+
 .page-heading {
   margin: 0;
   color: #fff;
-  padding: 0px 0px;
   background: #2992CB;
   width: 100%;
   overflow: hidden;
