@@ -38,7 +38,7 @@ I feel this continues to give quick access to the reset of the navigation items 
 
 ### Question Lead Experience / Order of Events
 
-This is what majority of my brain power was focused on. In conversation with Jesse I mentioned that I had a WordPress install on DigitalOcean and mentioned that I was using the $5 server unit. The response was, "If we had talked you we would have told you to use the $10 server". I would have made that change, had I have known.
+This is what majority of my brain power was focused on. In conversation with Jesse I mentioned that I had a WordPress install on DigitalOcean and mentioned that I was using the $5 server unit. The response was, "If we had talked you we would have told you to use the $10 server". I would have made that change, had I known.
 
 I would change the build process to ask the questions in the order that can help DigitalOcean 'recommend' the right server. 
 
