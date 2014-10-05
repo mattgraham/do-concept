@@ -21,6 +21,27 @@ a {
   }
 }
 
+h1 {
+  display: inline-block;
+  font-weight: $font-weight-light;
+  @include font-size(4.2);
+  letter-spacing: -0.04em;
+  margin: 50px 0;
+}
+
+h3 {
+  color: #222;
+  @include font-size(2.8);
+  font-weight: $font-weight-normal;
+}
+
+h4 {
+  color: #444;
+  @include font-size(2.0);
+  font-weight: $font-weight-normal;
+  margin: 20px 0;
+}
+
 .title {
   display: inline-block;
   padding: 40px 0;

@@ -4,7 +4,7 @@ h3 {
 
 	span {
 		margin-left: 5px;
-		font-size: 16px;
+		@include font-size(1.6);
 	}
 }
 
@@ -73,13 +73,13 @@ input[type="text"] {
 	}
 
 	.tab {
-		font-weight: bold;
+		font-weight: $font-weight-bold;
+		@include font-size(1.2);
 		@include line-height(2.4);
 		background: #f7f7f7;
 		color: #666;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		font-size: 12px;
 		border-radius: 3px 3px 0 0;
 		padding: 13px 20px 8px;
 		transition: .1s background ease-in;
@@ -105,12 +105,12 @@ input[type="text"] {
 
 	input {
 		margin-bottom: 30px;
-		font-weight: 100;
+    font-weight: $font-weight-light;
 	}
 }
 
 .applications {
-	font-size: 0;
+	@include font-size(0);
 	padding: 0;
 	margin: 0;
 
@@ -119,14 +119,14 @@ input[type="text"] {
 		width: calc((100% - 50px)/5);
 		margin-right: 10px;
 		transition: background .1s ease-in;
-		font-size: 14px;
+		@include font-size(1.4);
 		color: #666;
 		text-align: center;
 		list-style-type: none;
 		vertical-align: top;
-	  white-space: nowrap;
-	  overflow: hidden;
-	  text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 
 	  &.active {
 			.redmine:before 	{ color: #911; }
@@ -150,53 +150,53 @@ input[type="text"] {
 			border: 5px solid darken(#F7F7F7, 2%);
 			transition: all .1s ease;
 	    font-family: "FontMfizz";
-			font-size: 64px;
+			@include font-size(6.4);
 			cursor: pointer;
 			color: #ccc;
 
 		  &.redmine:before {
-				line-height: 115px;
+				@include line-height(11.5);
 				content: '\f106';
 			}
 
 			&.wordpress:before {
-				line-height: 125px;
+				@include line-height(12.5);
 				content: '\f14a';
 			}
 
 			&.lamp:before {
-				line-height: 120px;
+				@include line-height(12.0);
 				content: '\f139';
 			}
 
 			&.lemp:before {
-				line-height: 124px;
+				@include line-height(12.4);
 				content: '\f143';
 			}
 
 			&.gitlab:before {
-				line-height: 114px;
+				@include line-height(11.4);
 				content: '\f153';
 			}
 
 			&.jenkins:before {
-				line-height: 125px;
+				@include line-height(12.5);
 				content: '\f10f';
 			}
 
 			&.nodejs:before {
-				line-height: 115px;
+				@include line-height(11.5);
 			  content: '\f14c';
 			}
 
 			&.ruby:before {
-				line-height: 110px;
+				@include line-height(11.0);
 			  content: '\f13b';
 			}
 
 			&.hubot:before {
-				font-size: 54px;
-				line-height: 105px;
+				@include font-size(5.4);
+				@include line-height(10.5);
 				font-family: 'octicons';
 			  content: '\f09d';
 			}

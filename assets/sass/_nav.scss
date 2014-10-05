@@ -73,7 +73,7 @@ nav {
     background: $color-brand-green;
     border-radius: 2px;
     text-align: center;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
 
     &:before {
       margin-top: -1px;
@@ -85,7 +85,7 @@ nav {
   }
 
   .nav-do {
-    font-size: 0;
+    @include font-size(0);
     display: inline-block;
     width: 100%;
     background: url("/assets/images/logo-digitalocean.svg") no-repeat left center;

@@ -12,6 +12,7 @@
 }
 
 .region-geography {
+	@include font-size(1.3);
 	border-radius: 3px;
 	background-color: #fff;
 	color: #666;
@@ -20,7 +21,6 @@
 	margin: 0 10px 10px 10px;
 	text-align: center;
 	width: 138px;
-	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	border: 2px solid #f1f1f1;
@@ -33,7 +33,7 @@
 			border-top: solid 2px transparent;
 
 		.selected-region {
-			font-weight: bold;
+			font-weight: $font-weight-bold;
 			color: $color-brand;
 		}
 	}

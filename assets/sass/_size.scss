@@ -47,7 +47,7 @@
 		right: 10px;
 		background: #fff;
 		font-size: 12px;
-		font-weight: bold;
+		font-weight: $font-weight-bold;
 		padding: 0;
 		vertical-align: middle;
 		border-radius: 3px;
@@ -74,7 +74,7 @@
 			
 			.cost {
 				font-size: 32px;
-				font-weight: 600;	
+				font-weight: $font-weight-semi-bold;
 			}
 
 			.period {
@@ -99,7 +99,7 @@
 		font-size: 14px;
 		
 		strong {
-			font-weight: 600;
+    	font-weight: $font-weight-semi-bold;
 			color: #666;
 		}
 		
