@@ -28,7 +28,7 @@ I believe this is the current target and I enjoy the flat consistent branding th
 
 I feel a bit crowded and confused by the navigation on the droplet creation page. I have several times (previous to us talking) wanted to click the create button on the left (again) to complete the build process:
 
-![]({{ "/assets/images/writeup/demo-0.png" }})
+![]({{ "assets/images/writeup/demo-0.png" }})
 
 It feels 'in the way' more often than not. I'd like to expand the creation page to take up the majority of the browser width and move the navigation to a fixed, collapsed position on the left of the site opening on hover.
 
@@ -98,9 +98,9 @@ Without further delay:
 <a href="demo.html" class="button">View Demo</a>
 
 Assets were created in sketchapp
-![]({{ "/assets/images/writeup/demo-3.png" }})
+![]({{ "assets/images/writeup/demo-3.png" }})
 
 Complete design preview
-![]({{ "/assets/images/writeup/Desktop_HD.png" }})
+![]({{ "assets/images/writeup/Desktop_HD.png" }})
 
 I have also invited your github account to the repo. The site is built initally in Jekyll and can be run locally with a few terminal commands.
