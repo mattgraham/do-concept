@@ -1,7 +1,7 @@
 # Site settings
 title: Digital Ocean Droplet Preview
 email: mattgraham@kickthebox.com
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "/digitalocean-temp" # the subpath of your site, e.g. /blog/
 url: "http://madebygraham.com/digitalocean-temp" # the base hostname & protocol for your site
 twitter_username: michigangraham
 github_username:  mattgraham
