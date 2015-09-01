@@ -10,7 +10,7 @@ github_username:  mattgraham
 markdown: kramdown
 
 kramdown:
-	input: GFM
+  input: GFM
 
 sass:
   sass_dir: /assets/_sass
