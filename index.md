@@ -95,12 +95,12 @@ So that you can visually see some of the updates and code I've posted the app (o
 
 Without further delay:
 
-<a href="/demo.html" class="button">View Demo</a>
+<a href="demo.html" class="button">View Demo</a>
 
 Assets were created in sketchapp
-![](/assets/images/writeup/demo-3.png)
+![]({{ "/assets/images/writeup/demo-3.png" }})
 
 Complete design preview
-![](/assets/images/writeup/Desktop_HD.png)
+![]({{ "/assets/images/writeup/Desktop_HD.png" }})
 
 I have also invited your github account to the repo. The site is built initally in Jekyll and can be run locally with a few terminal commands.
